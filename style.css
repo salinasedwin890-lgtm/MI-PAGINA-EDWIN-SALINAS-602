@@ -29,6 +29,33 @@ padding: 12px;
 nav{
 color:white;
 text-decoration: none;
-margin: ;
+margin:0 15px;
+font-weight: bold;
 
+}
+/* Efecto al pasear el mouse*/
+nav a:hover  {
+color: black;
+
+}
+/* Secciones*/
+section {
+background-color: white;
+margin: 20px   auto;
+padding: 20px;
+width: 80%;
+border-radius: 8px;
+}
+/* Imagenes*/
+img {
+border-radius: 10px;
+margin-top: 10px;
+}
+/* Pie de pagina */
+footer {
+background-color: blue;
+color: red;
+text-align: center;
+padding: 10px;
+margin-top: 20px;
 }
