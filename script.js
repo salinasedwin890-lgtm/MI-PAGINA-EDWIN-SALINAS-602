@@ -1,7 +1,7 @@
 function MOSTRARMENSAJE () {
     let mensaje = document.getElementById("mensaje");
 
-    mensaje.innerHTML = "cuida y protege a los animales";
+    mensaje.innerHTML = "Hola mi nombre es Edwin Emilio Salinas Salinas tengo 16 años estudio en el CECyte EMSaD 35 mi mi pasatiempo favorito es ensayar musica";
     mensaje.style.display = "block";
 
     setTimeout(() => {
