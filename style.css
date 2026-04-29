@@ -59,4 +59,13 @@ text-align: center;
 padding: 10px;
 margin-top: 20px;
 }
+button {
+padding: 10px 20px;
+font-size:16px;
+background-color:#2ecc71;
+color:white;
+border-radius:8 px;
+cursor:pointer;
+
+}
 
