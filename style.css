@@ -62,7 +62,7 @@ margin-top: 20px;
 button {
 padding: 10px 20px;
 font-size:16px;
-background-color:#2ecc71;
+background-color:#2766ae;
 color:white;
 border-radius:8 px;
 cursor:pointer;
@@ -71,6 +71,6 @@ transition:transform 0.150, background-color 0.35;
 }
 button:active {
 transform:scale (0.95);
-background-color:#27ae60;
+background-color:#2766ae;
 }
 
