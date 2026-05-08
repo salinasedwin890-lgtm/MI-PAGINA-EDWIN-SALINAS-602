@@ -100,6 +100,21 @@ formulario.addEventListener("submit", function(e) {
     }
 
 });
+// ===== FAQ MASCOTAS =====
+
+const preguntas = document.querySelectorAll(".faq-item");
+
+preguntas.forEach(item => {
+
+    const pregunta = item.querySelector(".faq-question");
+
+    pregunta.addEventListener("click", () => {
+
+        item.classList.toggle("active");
+
+    });
+
+});
 
 
 
