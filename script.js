@@ -45,6 +45,61 @@ function MOSTRARMENSAJE2() {
         }, 50);
     }
 }
+const formulario = document.getElementById("formulario");
+
+formulario.addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    let valido = true;
+
+    // CAMPOS
+    const nombre = document.getElementById("nombre");
+    const correo = document.getElementById("correo");
+    const mensaje = document.getElementById("mensajeForm");
+
+    // ERRORES
+    const errores = document.querySelectorAll(".error");
+
+    errores.forEach(error => {
+        error.textContent = "";
+    });
+
+    // VALIDAR NOMBRE
+    if(nombre.value.trim() === "") {
+        errores[0].textContent = "El nombre es obligatorio";
+        valido = false;
+    }
+
+    // VALIDAR CORREO
+    if(correo.value.trim() === "") {
+
+        errores[1].textContent = "El correo es obligatorio";
+        valido = false;
+
+    } else if(!correo.value.includes("@")) {
+
+        errores[1].textContent = "Correo no válido";
+        valido = false;
+    }
+
+    // VALIDAR MENSAJE
+    if(mensaje.value.trim() === "") {
+
+        errores[2].textContent = "El mensaje es obligatorio";
+        valido = false;
+    }
+
+    // SI TODO ESTA BIEN
+    if(valido) {
+
+        document.getElementById("exito").textContent =
+        "Formulario enviado correctamente ✅";
+
+        formulario.reset();
+    }
+
+});
 
 
 
