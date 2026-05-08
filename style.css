@@ -266,3 +266,51 @@ textarea:focus {
     background: #1ebe5d;
     transform: scale(1.1);
 }
+/* ===== CARRUSEL ===== */
+
+.carrusel {
+    width: 85%;
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.slide {
+    width: 100%;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.slider button:hover {
+    background: rgba(0,0,0,0.8);
+}

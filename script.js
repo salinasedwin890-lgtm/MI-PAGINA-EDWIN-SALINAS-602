@@ -115,6 +115,28 @@ preguntas.forEach(item => {
     });
 
 });
+let index = 0;
+
+function mostrarSlide(n) {
+    const slides = document.querySelectorAll(".slide");
+
+    if (n >= slides.length) index = 0;
+    if (n < 0) index = slides.length - 1;
+
+    slides.forEach(slide => {
+        slide.classList.remove("active");
+    });
+
+    slides[index].classList.add("active");
+}
+
+function cambiarSlide(n) {
+    index += n;
+    mostrarSlide(index);
+}
+
+// iniciar
+mostrarSlide(index);
 
 
 
