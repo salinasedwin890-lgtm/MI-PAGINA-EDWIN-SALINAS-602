@@ -145,7 +145,10 @@ footer {
     header {
         padding: 35px 15px;
     }
-    /* ===== FORMULARIO ===== */
+    
+    
+}
+/* ===== FORMULARIO ===== */
 
 form {
     width: 100%;
@@ -197,6 +200,4 @@ textarea:focus {
     font-weight: bold;
     text-align: center;
     margin-top: 15px;
-}
-    
 }
