@@ -1,5 +1,5 @@
 
-function MOSTRARMENSAJE(boton) {
+function MOSTRARMENSAJE() {
     let mensaje = document.getElementById("mensaje");
 
     // OCULTAR EL BOTÓN
